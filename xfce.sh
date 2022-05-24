@@ -35,8 +35,8 @@ echo 'GRUB_DISABLE_OS_PROBER=false' >> /etc/default/grub
 update-grub
 
 # Download Nordic Theme
-cd /usr/share/themes/
-git clone https://github.com/EliverLara/Nordic.git
+#cd /usr/share/themes/
+#git clone https://github.com/EliverLara/Nordic.git
 
 # Fira Code Nerd Font variant needed
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/FiraCode.zip
