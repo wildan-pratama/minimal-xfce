@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #Install sudo and additional package
-apt install sudo wget curl
+apt install sudo wget curl zsh
 sudo usermod -aG sudo $USER
 
 #Add MX21 repo
