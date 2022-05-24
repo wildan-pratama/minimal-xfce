@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #Install sudo and additional package
-apt install sudo wget curl zsh apt-transport-https -y
+apt install sudo wget curl zsh apt-transport-https software-properties-common -y
 sudo usermod -aG sudo $USER
 
 #Add MX21 repo
@@ -20,7 +20,10 @@ apt install nala -y
 
 #Install XFCE Desktop
 nala upgrade -y
-nala install xfce4-appfinder xfce4-battery-plugin xfce4-datetime-plugin xfce4-diskperf-plugin xfce4-fsguard-plugin xfce4-genmon-plugin xfce4-mount-plugin xfce4-netload-plugin xfce4-notifyd xfce4-panel xfce4-places-plugin xfce4-power-manager xfce4-power-manager-data xfce4-power-manager-plugins xfce4-pulseaudio-plugin xfce4-screenshooter xfce4-session xfce4-settings xfce4-systemload-plugin xfce4-taskmanager xfce4-terminal xfce4-timer-plugin xfce4-verve-plugin xfce4-wavelan-plugin xfce4-xkb-plugin xfwm4 xfconf xfdesktop4 xfdesktop4-data thunar-archive-plugin thunar-shares-plugin thunar-data thunar-gtkhash thunar-volman thunar-custom-actions-mx network-manager network-manager-gnome network-manager-openvpn network-manager-openvpn-gnome xfce4-appmenu-plugin brave-browser plank ark -y
+nala install xfce4-appfinder xfce4-battery-plugin xfce4-datetime-plugin xfce4-diskperf-plugin xfce4-fsguard-plugin xfce4-genmon-plugin xfce4-mount-plugin xfce4-netload-plugin xfce4-notifyd xfce4-panel xfce4-places-plugin xfce4-power-manager xfce4-power-manager-data xfce4-power-manager-plugins xfce4-pulseaudio-plugin xfce4-screenshooter xfce4-session xfce4-settings xfce4-systemload-plugin xfce4-taskmanager xfce4-terminal xfce4-timer-plugin xfce4-verve-plugin xfce4-wavelan-plugin xfce4-xkb-plugin xfwm4 xfconf xfdesktop4 xfdesktop4-data thunar-archive-plugin thunar-shares-plugin thunar-data thunar-gtkhash thunar-volman thunar-custom-actions-mx network-manager network-manager-gnome network-manager-openvpn network-manager-openvpn-gnome xfce4-appmenu-plugin brave-browser plank ark mx-repo-manager mx-packageinstaller mx-remaster -y
+
+#Deb install 
+dpkg -i ./deb/ulauncher.deb
 
 #Disable OS Prober
 echo 'GRUB_DISABLE_OS_PROBER=false' >> /etc/default/grub
