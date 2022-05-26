@@ -51,3 +51,5 @@ rm -rf /usr/share/backgrounds
 unzip backgrounds.zip -d /usr/share/
 mv .gtkrc-2.0 /home/$username/.gtkrc-2.0
 chown -R $USER:$USER /home/$USER
+
+apt autoremove -y && apt autoclean -y
