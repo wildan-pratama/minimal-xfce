@@ -47,7 +47,6 @@ fc-cache -vf
 
 unzip icons.zip -d /usr/share/
 unzip config.zip -d /home/$USER
-rm -rf /usr/share/backgrounds
 unzip backgrounds.zip -d /usr/share/
 mv .gtkrc-2.0 /home/$username/.gtkrc-2.0
 chown -R $USER:$USER /home/$USER
