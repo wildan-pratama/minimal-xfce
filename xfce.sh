@@ -52,4 +52,5 @@ unzip backgrounds.zip -d /usr/share/
 mv .gtkrc-2.0 /home/$username/.gtkrc-2.0
 chown -R $USER:$USER /home/$USER
 
+apt remove --purge roxterm* -y
 apt autoremove -y && apt autoclean -y
